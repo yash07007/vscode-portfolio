@@ -1,0 +1,115 @@
+.container {
+    margin: 0;
+    counter-reset: line;
+}
+
+.foldBtns {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+}
+
+.foldBtns button {
+    margin: 0 10px 0 0;
+    padding: 10px;
+    background-color: var(--titlebar-bg);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.foldBtns button:hover {
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+.line::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.line::before:nth-child(1) {
+    margin-left: 20px;
+}
+
+.container .h4 {
+    color: var(--keyword-color);
+    display: inline;
+}
+
+.container .h5 {
+    display: inline;
+    font-size: .83em
+}
+
+.checkbox {
+    opacity: 0;
+    z-index: -1;
+}
+
+.chevron {
+    width: 1.5em;
+    transition: transform 0.2s;
+    display: inline;
+    margin-left: -35px;
+}
+
+.container label p {
+    display: inline;
+}
+
+.fold {
+    border-radius: 3px;
+    font-size: 0.7em;
+    margin-left: 2.5px;
+    bottom: 2px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
+.tag .line::before {
+    margin-right: 50px;
+}
+
+.tag .indent::before {
+    margin-right: 100px;
+}
+
+.tag .indent2::before {
+    margin-right: 160px;
+}
+
+.tag p {
+    width: 80%;
+    padding-left: 7.3em;
+    text-indent: -7.3em;
+}
+
+.tag .indent2 {
+    padding-left: 11.2em;
+    text-indent: -11.2em;
+}
+
+.tag .skillindent {
+    padding-left: 11.2em;
+    text-indent: -11.2em;
+}
+
+.tag span:first-child {
+    margin-left: 50px;
+}
+
+.tag span {
+    color: var(--object-color);
+}
+
+p.achievements,
+p.leadership {
+    margin-left: 160px;
+    width: 70%;
+    padding-left: 0;
+    text-indent: 0;
+}

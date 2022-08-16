@@ -1,0 +1,72 @@
+.container {
+    margin: 0;
+    counter-reset: line;
+}
+
+.line::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.chevron {
+    width: 1.5em;
+    transition: transform 0.2s;
+    display: inline;
+    margin-left: -55px;
+}
+
+.fold {
+    border-radius: 3px;
+    font-size: 0.7em;
+    margin-left: 2.5px;
+    bottom: 2px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.keyword {
+    color: var(--keyword-color);
+}
+
+.object {
+    color: var(--object-color);
+}
+
+.string {
+    color: var(--string-color);
+}
+
+.comment {
+    color: var(--comment-color);
+    display: inline;
+}
+
+.indent {
+    padding-left: 50px;
+}
+
+.comment .indent {
+    padding-left: 80px;
+}
+
+.print {
+    position: relative;
+    width: 70%;
+    padding-left: 9.6em;
+    text-indent: -9.6em;
+}
+
+.print::after {
+    position: absolute;
+    content: "/";
+    top: 0;
+    right: -150px;
+    color: var(--keyword-color);
+}
