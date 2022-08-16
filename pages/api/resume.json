@@ -107,7 +107,7 @@
             "description": "A themeable and developer-centric portfolio based on the VSCode",
             "tags": ["React JS", "Next JS", "JavaScript"],
             "source_code": "https://github.com/yash07007/vscode-portfolio",
-            "demo": "https://yash07007.github.io"
+            "demo": "https://vscode-portfolio-yash07007.vercel.app/"
         },
         {
             "id": 5,
