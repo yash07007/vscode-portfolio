@@ -7,14 +7,14 @@ export default function HomePage({ bio }) {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.background}>
+                {/* <div className={styles.background}>
                     <h1>I BUILD</h1>
                     <h1>WEBSITES</h1>
-                </div>
+                </div> */}
                 <div className={styles.foreground}>
                     <div className={styles.content}>
                         <h1 className={styles.name}>{bio.name}</h1>
-                        <h6 className={styles.bio}>Full Stack Web Developer | OS Developer</h6>
+                        <h6 className={styles.bio}>Software Developer | OS Developer</h6>
                         <a
                             href="/Yash_Solanki_Resume_USC_2022.pdf"
                             alt="alt text"

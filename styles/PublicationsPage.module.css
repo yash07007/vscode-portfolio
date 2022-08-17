@@ -1,3 +1,20 @@
+.container {
+    counter-reset: line;
+    line-height: 2rem;
+}
+
+.line::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.attribute {
+    padding-left: 10.1em;
+    text-indent: -10.1em;
+}
+
 .btns {
     position: fixed;
     top: 85px;

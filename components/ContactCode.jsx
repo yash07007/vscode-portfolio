@@ -8,20 +8,24 @@ const ContactCode = ({contactItems}) => {
             </p>
             {contactItems.slice(0, 8).map((item, index) => (
                 <p className={styles.line} key={index}>
-                    &nbsp;&nbsp;&nbsp;{item.social}:{" "}
+                    <span className={styles.property}>&nbsp;&nbsp;&nbsp;{item.social}</span>:{" "}
+                    <span className={styles.property}>url</span>
+                    (
                     <a href={item.href} target="_blank" rel="noopener">
-                        {item.link}
+                        "{item.link}"
                     </a>
-                    ;
+                    );
                 </p>
             ))}
             {contactItems.slice(8, contactItems.length).map((item, index) => (
                 <p className={styles.line} key={index}>
-                    &nbsp;&nbsp;{item.social}:{" "}
+                    <span className={styles.property}>&nbsp;&nbsp;&nbsp;{item.social}</span>:{" "}
+                    <span className={styles.property}>url</span>
+                    (
                     <a href={item.href} target="_blank" rel="noopener">
-                        {item.link}
+                        "{item.link}"
                     </a>
-                    ;
+                    );
                 </p>
             ))}
             <p className={styles.line}>&#125;</p>

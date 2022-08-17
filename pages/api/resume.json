@@ -107,7 +107,7 @@
             "description": "A themeable and developer-centric portfolio based on the VSCode",
             "tags": ["React JS", "Next JS", "JavaScript"],
             "source_code": "https://github.com/yash07007/vscode-portfolio",
-            "demo": "https://vscode-portfolio-yash07007.vercel.app/"
+            "demo": "https://www.yash-solanki.com"
         },
         {
             "id": 5,
@@ -187,8 +187,8 @@
     "contacts": [
         {
             "social": "website",
-            "link": "github.io/yash07007",
-            "href": "https://github.io/yash07007"
+            "link": "yash-solanki.com",
+            "href": "https://www.yash-solanki.com"
         },
         {
             "social": "email",
@@ -196,33 +196,33 @@
             "href": "mailto:ysolanki@usc.edu"
         },
         {
-            "social": "personal-email",
+            "social": "gmail",
             "link": "yashsolanki777@gmail.com",
             "href": "mailto:yashsolanki777@gmail.com"
         },
         {
             "social": "github",
-            "link": "yash07007",
+            "link": "github.com/yash07007",
             "href": "https://github.com/yash07007"
         },
         {
             "social": "linkedin",
-            "link": "yash07007",
+            "link": "linkedin.com/in/yash07007/",
             "href": "https://www.linkedin.com/in/yash07007/"
         },
         {
             "social": "leetcode",
-            "link": "yash07007",
+            "link": "leetcode.com/yash07007/",
             "href": "https://leetcode.com/yash07007/"
         },
         {
-            "social": "google-scholar",
-            "link": "YashSolanki",
+            "social": "publications",
+            "link": "scholar.google.com/yash07007",
             "href": "https://scholar.google.com/citations?user=HFY6DLYAAAAJ&hl=en"
         },
         {
             "social": "instagram",
-            "link": "yash07007",
+            "link": "instagram.com/yash07007",
             "href": "https://www.instagram.com/yash07007"
         }
     ]

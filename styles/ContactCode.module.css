@@ -1,6 +1,5 @@
 .code {
     counter-reset: line;
-    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .code a {
-    color: var(--accent-color);
+    color: var(--string-color);
     text-decoration: none;
 }
 
@@ -21,7 +20,11 @@
 }
 
 .className {
-    color: var(--accent-color);
+    color: var(--object-color);
+}
+
+.property {
+    color: var(--json-key-color);
 }
 
 @media screen and (max-width: 600px) {

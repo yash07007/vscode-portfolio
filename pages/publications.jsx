@@ -10,11 +10,11 @@ const PublicationsPage = ({ publications, bio }) => {
             </div>
             {publications.map((publication, index) => (
                 <div key={index}>
-                    <p>&#123;</p>
+                    <p className={styles.line}>&#123;</p>
                         {Object.keys(publication).map((key, i) => (
-                            <p key={i}><span className={styles.key}>"{key}"</span>: <span className={styles.value}>"{publication[key]}"</span>,</p>
+                            <p key={i} className={styles.line + " " + styles.attribute}><span className={styles.key}>"{key}"</span>: <span className={styles.value}>"{publication[key]}"</span>,</p>
                         ))}
-                    <p>&#125;,</p>
+                    <p className={styles.line}>&#125;,</p>
                 </div>
             ))}
         </div>

@@ -6,12 +6,12 @@ import NextjsIcon from "./icons/NextjsIcon";
 import SourceControlIcon from "./icons/SourceControlIcon";
 import styles from "../styles/Bottombar.module.css";
 
-const Bottombar = ({bio}) => {
+const Bottombar = ({ bio }) => {
     return (
         <footer className={styles.bottomBar}>
             <div className={styles.container}>
                 <a
-                    href="https://github.com/yash07007"
+                    href="https://github.com/yash07007/vscode-portfolio"
                     target="_blank"
                     rel="noreferrer noopener"
                     className={styles.section}>
@@ -26,10 +26,14 @@ const Bottombar = ({bio}) => {
                 </div>
             </div>
             <div className={styles.container}>
-                <div className={styles.section}>
+                <a 
+                    href="https://nextjs.org/" 
+                    target="_blank" 
+                    rel="noreferrer noopener" 
+                    className={styles.section}>
                     <NextjsIcon className={styles.icon} />
                     <p>Powered by Next.js</p>
-                </div>
+                </a>
                 <div className={styles.section}>
                     <CheckIcon className={styles.icon} />
                     <p>Prettier</p>

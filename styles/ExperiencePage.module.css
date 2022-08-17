@@ -1,6 +1,7 @@
 .container {
     margin: 0;
     counter-reset: line;
+    line-height: 1.5rem;
 }
 
 .line::before {
