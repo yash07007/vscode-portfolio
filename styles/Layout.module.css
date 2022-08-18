@@ -14,6 +14,23 @@
     overflow-y: auto;
 }
 
+.nocontent {
+    color: var(--text-color);
+    font-family: "JetBrains Mono", monospace;
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nocontent h2 {
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .content {
     scrollbar-width: 10px;
     scrollbar-color: var(--accent-color);
