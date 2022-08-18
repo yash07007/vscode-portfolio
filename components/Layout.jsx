@@ -12,7 +12,7 @@ function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
         return { width, height };
     }
-    return {width:0, height:0}
+    return { width: 0, height: 0 };
 }
 
 export function useWindowDimensions() {
@@ -30,14 +30,11 @@ export function useWindowDimensions() {
     return windowDimensions;
 }
 
-
-
 const Layout = ({ children }) => {
-
     const { height, width } = useWindowDimensions();
 
     return (
-        <>  
+        <>
             <Titlebar />
             {width > 1365 && (
                 <div className={styles.main}>

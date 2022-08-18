@@ -1,6 +1,6 @@
 .explorer {
     background: var(--explorer-bg);
-    width: 18vw;
+    width: 15vw;
     color: rgb(225, 228, 232);
     font-family: "Source Sans Pro", sans-serif;
     border-right: 1px solid var(--explorer-border);
@@ -18,7 +18,7 @@
 .heading {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
@@ -38,14 +38,18 @@
 }
 
 .file {
-    padding: 0.2rem 1rem;
+    padding: 0.25rem 1.25rem;
     display: flex;
     align-items: center;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .file p {
     margin-left: 5px;
+}
+
+.active {
+    background: red;
 }
 
 .file:hover {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ChevronRight from "../components/icons/ChevronRight";
 import styles from "../styles/Explorer.module.css";
+import { useRouter } from "next/router";
 
 const explorerItems = [
     {
@@ -44,6 +45,7 @@ const explorerItems = [
 
 const Explorer = () => {
     const [portfolioOpen, setPortfolioOpen] = useState(true);
+    const router = useRouter();
 
     return (
         <div className={styles.explorer}>
