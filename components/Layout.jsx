@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             )}
-            {width <= 1365 && (
+            {width <= 1365 && width > 0 && (
                 <div className={styles.main}>
                     <div style={{ width: "100%" }}>
                         <main className={styles.nocontent}>
