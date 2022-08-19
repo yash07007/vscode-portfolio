@@ -3,7 +3,7 @@ module.exports = {
         return [
             {
                 source: "/api/:path*",
-                destination: "http://localhost:4000/:path*",
+                destination: "https://www.github.io/yash07007/api/:path*",
             },
         ];
     },
