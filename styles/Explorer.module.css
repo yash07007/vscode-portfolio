@@ -1,7 +1,7 @@
 .explorer {
     background: var(--explorer-bg);
     width: 15vw;
-    color: rgb(225, 228, 232);
+    color: rgb(162, 166, 172);
     font-family: "Source Sans Pro", sans-serif;
     border-right: 1px solid var(--explorer-border);
 }
@@ -49,11 +49,13 @@
 }
 
 .active {
-    background: red;
+    background: var(--explorer-hover-bg);
+    color: rgb(225, 228, 232);
 }
 
 .file:hover {
     background: var(--explorer-hover-bg);
+    color: rgb(225, 228, 232);
 }
 
 .chevron {

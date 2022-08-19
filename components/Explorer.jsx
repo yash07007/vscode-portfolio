@@ -68,7 +68,7 @@ const Explorer = () => {
                 <div className={styles.files} style={portfolioOpen ? { display: "block" } : { display: "none" }}>
                     {explorerItems.map((item) => (
                         <Link href={item.path} key={item.name}>
-                            <div className={styles.file}>
+                            <div className={`${styles.file} ${router.pathname == item.path ? styles.active : ""}`}>
                                 <Image src={`/${item.icon}`} alt={item.name} height={18} width={18} />{" "}
                                 <p>{item.name}</p>
                             </div>
