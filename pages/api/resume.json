@@ -88,7 +88,7 @@
             "image": "",
             "description": "A real time stock trading platform with features like portfolio management, stock watchlist, trends visulization via charts",
             "tags": ["Angular JS", "Node", "Express JS", "TypeScript", "Flask", "Android Studio", "GCP"],
-            "demo": "https://stockker-dot-stockker.wl.r.appspot.com/search/home/",
+            "demo": "https://stockker-dot-stockker.wl.r.appspot.com/search/AMZN/",
             "source_code": "https://github.com/yash07007/stockker"
         },
         {
