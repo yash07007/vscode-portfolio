@@ -37,7 +37,7 @@
             "name": "University of Southern California",
             "course": "Masters in Computer Science (Computer Networks)",
             "graduation": "May 2023",
-            "gpa": "3.5"
+            "gpa": "3.6"
         },
         {
             "name": "Pandit Deendayal Petroleum University",
@@ -93,6 +93,13 @@
         },
         {
             "id": 3,
+            "name": "Domain Name System - DDos Attack & Defense Simulation",
+            "image": "",
+            "description": "An Domian Name System simulation in a 10 node netwrok and various scripts to perform DDos attack, packet loss and scripts to deploy DNS defenses like automated firewall filtering, Dynamic ECMP load balancing & Traffic Scrubbing.",
+            "tags": ["C", "C++", "Linux", "Netwoking"]
+        },
+        {
+            "id": 4,
             "name": "Blockchain Based Drug Regulation System",
             "image": "",
             "description": "A drug regulation system involving multiple stakeholders which keeps track of drug's supply chain and gives restricted drugs to consumers after proper authorization. System makes use of smart contracts implemented on ethereum network.",
@@ -101,7 +108,7 @@
             "publication": "https://link.springer.com/chapter/10.1007/978-981-16-9089-1_23"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "VSCode Portfolio",
             "image": "",
             "description": "A themeable and developer-centric portfolio based on the VSCode",
@@ -110,7 +117,7 @@
             "demo": "https://www.yash-solanki.com"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "MiniBlock - Tamperproof Voting System",
             "image": "",
             "description": "A Blockchain-based robust voting ecosystem implemented with python and Vue js.",
@@ -118,7 +125,7 @@
             "source_code": "https://github.com/yash07007/MiniBlock"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Socket Programming",
             "image": "",
             "description": "A socket programming project developer in C++ which is implemented with multithreading. It has client and server side of network applications which interact with each other.",
@@ -126,7 +133,7 @@
             "source_code": "https://github.com/yash07007/socket_programming"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Token Bucket Filter",
             "image": "",
             "description": "Token Bucket Filter (Network Traffic Shaper) using multithreading implemented using C",
@@ -134,7 +141,7 @@
             "source_code": "https://github.com/yash07007/token-bucket-filter"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "CrowdCoin",
             "image": "",
             "description": "An crowdfunding distributed application implemented on ethereum with react front end and mocha test framework.",

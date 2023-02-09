@@ -16,7 +16,7 @@ export default function HomePage({ bio }) {
                         <h1 className={styles.name}>{bio.name}</h1>
                         <h6 className={styles.bio}>Software Developer | OS Developer</h6>
                         <a
-                            href="/Yash_Solanki_Resume_USC_2022.pdf"
+                            href="/Yash_Solanki_Resume_USC_2023.pdf"
                             alt="alt text"
                             target="_blank"
                             rel="noopener noreferrer"
