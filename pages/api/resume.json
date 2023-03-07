@@ -11,7 +11,7 @@
             "endDate": "date.now()",
             "company": "Office of Chief Information Security Officer, ITS, USC",
             "location": "Los Angeles, USA",
-            "role": "Information Security Risk Analyst",
+            "role": "Software Engineer",
             "summary": [
                 "Designed an architecture that aggregates 6 data sources into a single data lake on AWS for risk assessment and visualization",
                 "Conducted series of 6-month phishing campaigns for 25 USC departments resulting to 55% decrease in phishing failure rate",
@@ -20,7 +20,7 @@
         },
         {
             "id": "2",
-            "startDate": "Nov 2020",
+            "startDate": "May 2020",
             "endDate": "May 2021",
             "company": "SharkStriker Inc.",
             "location": "Ahmedabad, India",
