@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Titlebar />
-            {width > 1365 && (
+            {width > 1200 && (
                 <div className={styles.main}>
                     <Sidebar />
                     <Explorer />
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             )}
-            {width <= 1365 && width > 0 && (
+            {width <= 1200 && width > 0 && (
                 <div className={styles.main}>
                     <div style={{ width: "100%" }}>
                         <main className={styles.nocontent}>
