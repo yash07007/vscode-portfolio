@@ -7,10 +7,23 @@
     "experience": [
         {
             "id": "1",
-            "startDate": "Nov 2021",
+            "startDate": "June 2023",
             "endDate": "date.now()",
+            "company": "Hughes Networks",
+            "location": "Germantown, MD",
+            "role": "Software Engineer - MTS 2",
+            "summary": [
+                "Spearheaded the design, development, and deployment of a proprietary multiple access protocol for HughesNet VSAT, resulting in a remarkable 25% increase in carrier bandwidth utilization using C and C++",
+                "Engineered and implemented optimizations to significantly reduce RF gateway switchover times by 40%, enhancing service reliability during adverse weather conditions for Jupiter 3 connectivity",
+                "Led comprehensive efforts in troubleshooting and resolving layer 2 (Satellite Link Layer + MAC) challenges within Hughes' flagship Jupiter 3 system, ensuring seamless operation and optimal performance"
+            ]
+        },
+        {
+            "id": "2",
+            "startDate": "Nov 2021",
+            "endDate": "May 2021",
             "company": "Office of Chief Information Security Officer, ITS, USC",
-            "location": "Los Angeles, USA",
+            "location": "Los Angeles, CA",
             "role": "Software Engineer",
             "summary": [
                 "Designed an architecture that aggregates 6 data sources into a single data lake on AWS for risk assessment and visualization",
@@ -19,7 +32,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": "3",
             "startDate": "May 2020",
             "endDate": "May 2021",
             "company": "SharkStriker Inc.",
@@ -58,20 +71,36 @@
     ],
     "skills": [
         {
-            "category": "frameworks",
-            "skills": "Angular, React, Express JS, Bootstrap, Node JS, Android SDK, Flask, REST API, Ethereum, Keras, Scikit-learn"
+            "title": "frameworks",
+            "categories": [
+                { "name": "frontend", "value":"Angular, React, Bootstrap"}, 
+                { "name": "backend", "value":"Express JS, Node JS, Android SDK, Flask"}
+            ]
         },
         {
-            "category": "technologies",
-            "skills": "Amazon Web Services, Google Cloud Platform, Git, Docker, Linux, Blockchain, Kibana, OpenCV"
+            "title": "technologies",
+            "categories": [
+                { "name": "devOps", "value":"Git, Docker"}, 
+                { "name": "databases", "value":"Mongo DB, Dynamo DB, Redis, MySQL, Elasticsearch, Memcached"}, 
+                { "name": "clouds", "value":"Amazon Web Services, Google Cloud Platform"}
+            ]
         },
         {
-            "category": "languages",
-            "skills": "C, C++, x86 Assembly, Python, Java, JavaScript, TypeScript, HTML5, Solidity, Logstash"
+            "title": "languages",
+            "categories": [
+                { "name": "primary", "value":"C, C++, Python, JavaScript"}, 
+                { "name": "secondary", "value":"x86 Assembly, Java, TypeScript, HTML5, Solidity, Logstash"}
+            ]
         },
         {
-            "category": "databases",
-            "skills": "Mongo DB, Dynamo DB, Redis, MySQL, Elasticsearch, Memcached"
+            "title": "other-skills",
+            "categories": [
+                { "name": "networks", "value":"Linux, TCP/IP, Network Protocol Design"}, 
+                { "name": "operatingSystems", "value":"Linux, Windows, Operating Systems development"},
+                { "name": "machineLearning", "value":"Machine Learning, Deep Learning, OpenCV"},
+                { "name": "misc", "value":"Blockchain, Kibana, REST APIs, Ethereum"}
+
+            ]
         }
     ],
     "projects": [

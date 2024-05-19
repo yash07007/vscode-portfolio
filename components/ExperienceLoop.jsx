@@ -17,9 +17,21 @@ const ExperienceLoop = ({experience}) => {
         <>
         <p className={styles.line}><span className={styles.keyword}>while</span>(<span className={styles.object}>date</span>.between(<span className={styles.string}>"{experience.startDate}"</span>, {end})):</p>
         <p className={styles.line}></p>
-        <p className={styles.line}><span className={styles.indent}>company = <span className={styles.string}>"{experience.company}"</span></span></p>
-        <p className={styles.line}><span className={styles.indent}>location = <span className={styles.string}>"{experience.location}"</span></span></p>
-        <p className={styles.line}><span className={styles.indent}>role = <span className={styles.string}>"{experience.role}"</span></span></p>
+        <p className={styles.line}>
+            <span className={styles.indent}>
+                company = <span className={styles.string}>"{experience.company}"</span>
+            </span>
+        </p>
+        <p className={styles.line}>
+            <span className={styles.indent}>
+                role = <span className={styles.string}>"{experience.role}"</span>
+            </span>
+        </p>
+        <p className={styles.line}>
+            <span className={styles.indent}>
+                location = <span className={styles.string}>"{experience.location}"</span>
+            </span>
+        </p>
         <p className={styles.line}></p>
         <input
             type="checkbox"
@@ -31,7 +43,12 @@ const ExperienceLoop = ({experience}) => {
         <label htmlFor={"checkbox-" + experience.id}>
                 <div className={styles.line}>
                     <ChevronRight className={styles.chevron} style={isOpen ? { transform: "rotate(90deg)" } : {}} />
-                    <p className={styles.comment}><span className={styles.indent}># <span style={isOpen ? { display: "none" } : {}}>Unfold for </span>Summary</span></p>
+                    <p className={styles.comment}>
+                        <span className={styles.indent}>
+                            <span style={isOpen ? { display: "none" } : {}}># Unfold for more details</span>
+                            <span style={!isOpen ? { display: "none" } : {}}># Job Summary</span>
+                        </span>
+                    </p>
                     <span style={isOpen ? { visibility: "hidden" } : {}} className={styles.fold}>
                         ...
                     </span>

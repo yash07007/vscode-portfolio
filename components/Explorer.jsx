@@ -22,11 +22,6 @@ const explorerItems = [
         icon: "python_icon.svg",
     },
     {
-        name: "contact.css",
-        path: "/contact",
-        icon: "css_icon.svg",
-    },
-    {
         name: "projects.js",
         path: "/projects",
         icon: "js_icon.svg",
@@ -41,6 +36,11 @@ const explorerItems = [
         path: "/github",
         icon: "markdown_icon.svg",
     },
+    {
+        name: "contact.css",
+        path: "/contact",
+        icon: "css_icon.svg",
+    }
 ];
 
 const Explorer = () => {

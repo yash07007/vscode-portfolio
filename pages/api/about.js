@@ -26,9 +26,11 @@ export const getSkills = () => {
     let skillsTags = [];
     data.skills.forEach((skill) => {
         let skillTag = {};
-        skillTag.name = skill.category;
+        skillTag.name = skill.title;
         skillTag.attributes = [];
-        skillTag.attributes.push({ name: "value", value: skill.skills });
+        skill.categories.forEach((category) => {
+            skillTag.attributes.push({ name: category.name, value: category.value });
+        });
         skillsTags.push(skillTag);
     });
 

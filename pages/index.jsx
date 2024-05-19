@@ -14,10 +14,10 @@ export default function HomePage({ bio }) {
                 <div className={styles.foreground}>
                     <div className={styles.content}>
                         <h1 className={styles.name}>{bio.name}</h1>
-                        <h6 className={styles.bio}>Software Developer | OS Developer</h6>
+                        <h6 className={styles.bio}>Software Developer</h6>
                         <a
-                            href="/Yash_Solanki_Resume_USC_2023.pdf"
-                            alt="alt text"
+                            href="/Yash_Solanki_Resume_USC_2024.pdf"
+                            alt="Yash_Solanki_Resume_USC_2024.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.button}>

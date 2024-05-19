@@ -16,8 +16,8 @@ const sidebarTopItems = [
         path: "/",
     },
     {
-        Icon: GithubIcon,
-        path: "/github",
+        Icon: BriefcaseIcon,
+        path: "/experience"
     },
     {
         Icon: CodeIcon,
@@ -28,12 +28,12 @@ const sidebarTopItems = [
         path: "/publications",
     },
     {
-        Icon: MailIcon,
-        path: "/contact",
+        Icon: GithubIcon,
+        path: "/github",
     },
     {
-        Icon: BriefcaseIcon,
-        path: "/experience"
+        Icon: MailIcon,
+        path: "/contact",
     }
 ];
 
