@@ -75,19 +75,16 @@ const AboutPage = ({ leadershipItems, achievementsItems, skillsTags, educationTa
                 ))}
             </HTMLTag>
             <p className={styles.line}></p>
-
             <HTMLTag name="skills" isOpen={skillsOpen} setIsOpen={setSkillsOpen}>
                 {skillsTags.map((tag, index) => (
                     <HTMLSelfClosingTag tag={tag} key={index} />
                 ))}
             </HTMLTag>
             <p className={styles.line}></p>
-
             <HTMLTag name="achievements" isOpen={achievementsOpen} setIsOpen={setAchievementsOpen}>
                 <HTMLList items={achievementsItems} />
             </HTMLTag>
             <p className={styles.line}></p>
-
             <HTMLTag name="leadership" isOpen={leadershipOpen} setIsOpen={setLeadershipOpen}>
                 <HTMLList items={leadershipItems} />
             </HTMLTag>

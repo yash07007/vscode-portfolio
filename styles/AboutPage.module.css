@@ -114,3 +114,79 @@ p.leadership {
     padding-left: 0;
     text-indent: 0;
 }
+
+@media screen and (max-width: 1500px) {
+    .foldBtns {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .foldBtns button {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .tag p {
+        width: 100%;
+    }
+    .foldBtns {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tag .indent::before {
+        margin-right: 50px;
+    }
+    
+    .tag .indent2::before {
+        margin-right: 110px;
+    }
+
+    .tag .indent2 {
+        padding-left: 6.9em;
+        text-indent: -6.9em;
+    }
+    
+    .line::before {
+        content: "";
+        margin-right: 0;
+    }
+
+    .checkbox {
+        position: absolute;
+    }
+
+    .chevron {
+        width: 0;
+        display: none;
+        margin-left: 0;
+    }
+
+    .containerTag {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tag p {
+        padding-left: 6.3em;
+    }
+
+    .tag span:first-child {
+        margin-left: 0px;
+    }
+
+    .container {
+        overflow-x: auto;
+    }
+    
+    /* .tag .indent::before {
+        margin-right: 0px;
+    }
+    
+    .tag .indent2::before {
+        margin-right: 0px;
+    } */
+}

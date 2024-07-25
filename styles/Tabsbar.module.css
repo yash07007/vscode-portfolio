@@ -5,9 +5,15 @@
     overflow-x: auto;
 }
 
+@media screen and (max-width: 1050px) {
+    .tabs {
+        width: 95vw;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .tabs {
-        width: 78vw;
+        width: 90vw;
     }
 }
 

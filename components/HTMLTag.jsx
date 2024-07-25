@@ -5,12 +5,13 @@ const HTMLTag = ({ name, isOpen, setIsOpen, children }) => {
 
     return (
         <>
+        <div className={styles.containerTag}>
             <input
                 type="checkbox"
                 className={styles.checkbox}
                 id={name + "-checkbox"}
                 checked={isOpen}
-                onChange={() => setIsOpen(!isOpen)}
+                onChange={() => {if(window.innerWidth > 900) {setIsOpen(!isOpen)} else {setIsOpen(true)}}}
             />
             <label htmlFor={name + "-checkbox"}>
                 <ChevronRight className={styles.chevron} style={isOpen ? { transform: "rotate(90deg)" } : {}} />
@@ -30,6 +31,7 @@ const HTMLTag = ({ name, isOpen, setIsOpen, children }) => {
                 &lt;<b className={styles.h5}>/</b>
                 <span className={styles.h4}>{name}</span>&gt;
             </p>
+        </div>
         </>
     );
 };

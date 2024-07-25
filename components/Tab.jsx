@@ -9,7 +9,9 @@ const Tab = ({ icon, filename, path }) => {
     return (
         <Link href={path}>
             <div className={`${styles.tab} ${router.pathname === path && styles.active}`}>
-                <Image src={icon} alt={filename} height={18} width={18} />
+                <span className={styles.tabIcon}>
+                    <Image  src={icon} alt={filename} height={18} width={18} />
+                </span>
                 <p>{filename}</p>
             </div>
         </Link>
