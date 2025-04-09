@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import Titlebar from "../components/Titlebar";
 import Sidebar from "../components/Sidebar";
 import Explorer from "../components/Explorer";
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
+            <Analytics/>
             <Titlebar />
             {width > 100 && (
                 <div className={styles.main}>
