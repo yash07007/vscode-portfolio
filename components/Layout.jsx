@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Titlebar from "../components/Titlebar";
 import Sidebar from "../components/Sidebar";
 import Explorer from "../components/Explorer";
@@ -37,6 +38,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Analytics/>
+            <SpeedInsights/>
             <Titlebar />
             {width > 100 && (
                 <div className={styles.main}>
