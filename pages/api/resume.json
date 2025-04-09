@@ -11,7 +11,7 @@
             "endDate": "date.now()",
             "company": "Hughes Networks",
             "location": "Germantown, MD",
-            "role": "Software Engineer - MTS 2",
+            "role": "Software Engineer - MTS 3",
             "summary": [
                 "Spearheaded the design, development, and deployment of a proprietary multiple access protocol for HughesNet VSAT, resulting in a remarkable 25% increase in carrier bandwidth utilization using C and C++",
                 "Engineered and implemented optimizations to significantly reduce RF gateway switchover times by 40%, enhancing service reliability during adverse weather conditions for Jupiter 3 connectivity",
