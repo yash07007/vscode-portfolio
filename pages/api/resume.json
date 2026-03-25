@@ -7,8 +7,22 @@
     "experience": [
         {
             "id": "1",
-            "startDate": "June 2023",
+            "startDate": "June 2025",
             "endDate": "date.now()",
+            "company": "Apple - Satellite Connectivity Group",
+            "location": "San Jose, CA",
+            "role": "Software Engineer – Wireless Protocol (MAC Layer)",
+            "summary": [
+                "Designing and developing a production-grade wireless protocol for satellite communication, enabling Emergency SOS and Messages via satellite services",
+                "Architecting highly scalable scheduling and resource allocation mechanisms to support large-scale device connectivity in constrained, high-latency environments",
+                "Implemented performance-critical C++ components for real-time protocol execution and optimized throughput, latency, and reliability",
+                "Built large-scale simulation and validation frameworks and resolved complex Layer 2 (MAC) issues in production to ensure robust system integration"
+            ]
+        },
+        {
+            "id": "2",
+            "startDate": "June 2023",
+            "endDate": "June 2025",
             "company": "Hughes Networks",
             "location": "Germantown, MD",
             "role": "Software Engineer - MTS 3",
@@ -19,9 +33,9 @@
             ]
         },
         {
-            "id": "2",
+            "id": "3",
             "startDate": "Nov 2021",
-            "endDate": "May 2021",
+            "endDate": "May 2023",
             "company": "Office of Chief Information Security Officer, ITS, USC",
             "location": "Los Angeles, CA",
             "role": "Software Engineer",
@@ -32,7 +46,7 @@
             ]
         },
         {
-            "id": "3",
+            "id": "4",
             "startDate": "May 2020",
             "endDate": "May 2021",
             "company": "SharkStriker Inc.",
