@@ -124,9 +124,6 @@ p.leadership {
     .foldBtns button {
         margin-bottom: 10px;
     }
-}
-
-@media screen and (max-width: 1500px) {
     .tag p {
         width: 100%;
     }
@@ -139,7 +136,7 @@ p.leadership {
     .tag .indent::before {
         margin-right: 50px;
     }
-    
+
     .tag .indent2::before {
         margin-right: 110px;
     }
@@ -148,7 +145,7 @@ p.leadership {
         padding-left: 6.9em;
         text-indent: -6.9em;
     }
-    
+
     .line::before {
         content: "";
         margin-right: 0;
@@ -169,24 +166,77 @@ p.leadership {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        overflow-x: hidden;
+    }
+
     .tag p {
-        padding-left: 6.3em;
+        width: 100%;
+        padding-left: 1.5rem;
+        text-indent: -1.5rem;
     }
 
     .tag span:first-child {
-        margin-left: 0px;
+        margin-left: 0.5rem;
     }
 
-    .container {
-        overflow-x: auto;
+    .tag .indent::before {
+        margin-right: 0.5rem;
     }
-    
-    /* .tag .indent::before {
-        margin-right: 0px;
-    }
-    
+
     .tag .indent2::before {
-        margin-right: 0px;
-    } */
+        margin-right: 1rem;
+    }
+
+    .tag .indent2 {
+        padding-left: 2rem;
+        text-indent: -2rem;
+    }
+
+    .tag .skillindent {
+        padding-left: 2rem;
+        text-indent: -2rem;
+    }
+
+    p.achievements,
+    p.leadership {
+        margin-left: 1rem;
+        width: 100%;
+    }
+
+    .fold {
+        display: none;
+    }
+
+    .foldBtns {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: 0.75rem;
+    }
+
+    .tag span:first-child {
+        margin-left: 0;
+    }
+
+    .tag p {
+        padding-left: 1rem;
+        text-indent: -1rem;
+    }
+
+    .tag .indent2 {
+        padding-left: 1.5rem;
+        text-indent: -1.5rem;
+    }
+
+    p.achievements,
+    p.leadership {
+        margin-left: 0.5rem;
+    }
 }

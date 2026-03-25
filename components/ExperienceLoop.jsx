@@ -1,10 +1,16 @@
 import styles from "../styles/ExperiencePage.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ChevronRight from "./icons/ChevronRight";
 
 const ExperienceLoop = ({experience}) => {
 
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth <= 768) {
+            setIsOpen(true);
+        }
+    }, []);
     let end;
     if(experience.endDate == "date.now()") {
         end = <span><span className={styles.object}>date</span>.now()</span>

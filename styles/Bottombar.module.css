@@ -38,6 +38,15 @@
     background: var(--bottombar-hover-bg);
 }
 
+@media screen and (max-width: 768px) {
+    .bottomBar {
+        font-size: 0.65rem;
+    }
+    .section p {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .bottomBar {
         font-size: 0.6rem;

@@ -42,9 +42,24 @@
     width: 100% !important;
 }
 
+.contributions {
+    overflow-x: auto;
+}
+
 @media screen and (max-width: 900px) {
     .user h3 {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .user {
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+
+    .user > div {
+        padding: 0 0.5rem;
     }
 }
 

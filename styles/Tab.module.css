@@ -8,6 +8,7 @@
     font-family: "Source Sans Pro", sans-serif;
     font-size: 0.9rem;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .tab p {
@@ -23,5 +24,20 @@
 @media screen and (max-width: 1150px) {
     .tabIcon {
         display: none;
-    }    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tab {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .tabIcon {
+        display: none;
+    }
+
+    .tab p {
+        margin-left: 0;
+    }
 }

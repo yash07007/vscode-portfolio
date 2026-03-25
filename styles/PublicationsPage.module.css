@@ -41,3 +41,47 @@
     color: var(--json-key-color);
     padding-left: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .line::before {
+        content: "";
+        margin-right: 0;
+    }
+
+    .attribute {
+        padding-left: 2rem;
+        text-indent: -2rem;
+        word-break: break-word;
+    }
+
+    .key {
+        padding-left: 1rem;
+    }
+
+    .btns {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: 0.75rem;
+    }
+
+    .attribute {
+        padding-left: 1.5rem;
+        text-indent: -1.5rem;
+    }
+
+    .key {
+        padding-left: 0.5rem;
+    }
+}

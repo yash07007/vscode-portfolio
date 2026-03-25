@@ -27,9 +27,25 @@
     color: var(--json-key-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .code {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         line-height: 1.5rem;
+    }
+
+    .line::before {
+        content: "";
+        margin-right: 0;
+    }
+
+    .line {
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .code {
+        font-size: 0.75rem;
+        line-height: 1.3rem;
     }
 }

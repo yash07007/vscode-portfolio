@@ -71,3 +71,52 @@
     right: -150px;
     color: var(--keyword-color);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    .line::before {
+        content: "";
+        margin-right: 0;
+    }
+
+    .indent {
+        padding-left: 1rem;
+    }
+
+    .comment .indent {
+        padding-left: 1.5rem;
+    }
+
+    .chevron {
+        width: 1.2em;
+        margin-left: -1.5rem;
+    }
+
+    .print {
+        width: 100%;
+        padding-left: 2.5rem;
+        text-indent: -2.5rem;
+    }
+
+    .print::after {
+        display: none;
+    }
+
+    .fold {
+        display: none;
+    }
+
+    .string {
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: 0.75rem;
+    }
+}
