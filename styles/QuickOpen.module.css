@@ -1,0 +1,67 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.modal {
+    background: var(--explorer-bg);
+    border: 1px solid var(--explorer-border);
+    border-radius: 6px;
+    width: 500px;
+    max-width: 90vw;
+    max-height: 350px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--tab-bg);
+    border: none;
+    border-bottom: 1px solid var(--explorer-border);
+    color: var(--text-color);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--comment-color);
+}
+
+.results {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.95rem;
+}
+
+.result:hover,
+.selected {
+    background: var(--explorer-hover-bg);
+}
+
+.noResults {
+    padding: 1rem;
+    color: var(--comment-color);
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+}

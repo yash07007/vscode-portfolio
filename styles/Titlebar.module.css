@@ -64,3 +64,16 @@
         flex: 4;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .items {
+        display: none;
+    }
+    .title {
+        flex: 1;
+        font-size: 0.75rem;
+    }
+    .windowButtons {
+        flex: 0;
+    }
+}

@@ -9,6 +9,7 @@ import AccountIcon from "./icons/AccountIcon";
 import SettingsIcon from "./icons/SettingsIcon";
 import styles from "../styles/Sidebar.module.css";
 import BriefcaseIcon from "./icons/BriefcaseIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
 
 const sidebarTopItems = [
     {
@@ -39,6 +40,11 @@ const sidebarTopItems = [
 
 const sidebarBottomItems = [
     {
+        Icon: LinkedInIcon,
+        path: "https://www.linkedin.com/in/yash07007/",
+        external: true,
+    },
+    {
         Icon: AccountIcon,
         path: "/about",
     },
@@ -66,14 +72,23 @@ const Sidebar = () => {
                 ))}
             </div>
             <div className={styles.sidebarBottom}>
-                {sidebarBottomItems.map(({ Icon, path }) => (
+                {sidebarBottomItems.map(({ Icon, path, external }) => (
                     <div className={styles.iconContainer} key={path}>
-                        <Link href={path} >
-                            <Icon
-                                fill={router.pathname === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"}
-                                className={styles.icon}
-                            />
-                        </Link>
+                        {external ? (
+                            <a href={path} target="_blank" rel="noopener noreferrer">
+                                <Icon
+                                    fill="rgb(106, 115, 125)"
+                                    className={styles.icon}
+                                />
+                            </a>
+                        ) : (
+                            <Link href={path}>
+                                <Icon
+                                    fill={router.pathname === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"}
+                                    className={styles.icon}
+                                />
+                            </Link>
+                        )}
                     </div>
                 ))}
             </div>

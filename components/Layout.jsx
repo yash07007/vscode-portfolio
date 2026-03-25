@@ -3,9 +3,10 @@ import Sidebar from "../components/Sidebar";
 import Explorer from "../components/Explorer";
 import Bottombar from "../components/Bottombar";
 import Tabsbar from "./Tabsbar";
+import QuickOpen from "./QuickOpen";
 import styles from "../styles/Layout.module.css";
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useRouter } from "next/router";
 
 function getWindowDimensions() {
     if (typeof window !== "undefined") {
@@ -31,32 +32,45 @@ export function useWindowDimensions() {
 }
 
 const Layout = ({ children }) => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
+    const [quickOpenVisible, setQuickOpenVisible] = useState(false);
+    const router = useRouter();
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if ((e.metaKey || e.ctrlKey) && e.key === "p") {
+                e.preventDefault();
+                setQuickOpenVisible((v) => !v);
+            }
+            if (e.key === "Escape") {
+                setQuickOpenVisible(false);
+            }
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, []);
+
+    const isDesktop = width > 768;
 
     return (
         <>
             <Titlebar />
-            {width > 768 && (
-                <div className={styles.main}>
-                    <Sidebar />
-                    <Explorer />
-                    <div style={{ width: "100%" }}>
-                        <Tabsbar />
-                        <main className={styles.content}>{children}</main>
-                    </div>
+            <div className={styles.main}>
+                {isDesktop && (
+                    <>
+                        <Sidebar />
+                        <Explorer />
+                    </>
+                )}
+                <div style={{ width: "100%" }}>
+                    <Tabsbar />
+                    <main className={styles.content} key={router.pathname}>
+                        <div className="page-transition">{children}</div>
+                    </main>
                 </div>
-            )}
-            {width <= 768 && width > 0 && (
-                <div className={styles.main}>
-                    <div style={{ width: "100%" }}>
-                        <main className={styles.nocontent}>
-                            <Image src="/desktop_icon.svg" height={100} width={100} alt="Desktop icon" />
-                            <h2>Please visit desktop site for best experience!</h2>
-                        </main>
-                    </div>
-                </div>
-            )}
+            </div>
             <Bottombar />
+            <QuickOpen isOpen={quickOpenVisible} onClose={() => setQuickOpenVisible(false)} />
         </>
     );
 };
