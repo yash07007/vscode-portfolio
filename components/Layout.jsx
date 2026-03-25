@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Titlebar />
-            {width > 100 && (
+            {width > 768 && (
                 <div className={styles.main}>
                     <Sidebar />
                     <Explorer />
@@ -46,11 +46,11 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             )}
-            {width <= 100 && width > 0 && (
+            {width <= 768 && width > 0 && (
                 <div className={styles.main}>
                     <div style={{ width: "100%" }}>
                         <main className={styles.nocontent}>
-                            <Image src="/desktop_icon.svg" height={100} width={100} />
+                            <Image src="/desktop_icon.svg" height={100} width={100} alt="Desktop icon" />
                             <h2>Please visit desktop site for best experience!</h2>
                         </main>
                     </div>

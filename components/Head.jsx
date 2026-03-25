@@ -1,31 +1,26 @@
 import Head from "next/head";
 
-const CustomHead = ({ title }) => {
+const CustomHead = ({ title = "Yash Solanki" }) => {
     return (
         <Head>
             <title>{title}</title>
             <meta
                 name="description"
-                content="Yash Solanki is an avid full stack web developer building websites and applications you'd love to use"
+                content="Yash Solanki — Software Engineer specializing in wireless protocol design, satellite communication, and systems programming."
             />
             <meta
                 name="keywords"
-                content="yash solanki, yash, solanki, web developer portfolio, yash web developer, yash developer, mern stack, yash solanki portfolio, vscode-portfolio"
+                content="yash solanki, software engineer, wireless protocol, satellite communication, mac layer, systems programming, vscode-portfolio"
             />
             <meta property="og:title" content="Yash Solanki's Portfolio" />
             <meta
                 property="og:description"
-                content="A full-stack developer building websites that you'd like to use."
+                content="Software Engineer specializing in wireless protocol design, satellite communication, and systems programming."
             />
-            <meta property="og:image" content="" />
-            <meta property="og:url" content="" />
+            <meta property="og:url" content="https://www.yash-solanki.com" />
             <meta name="twitter:card" content="summary_large_image" />
         </Head>
     );
 };
 
 export default CustomHead;
-
-CustomHead.defaultProps = {
-    title: "Yash Solanki",
-};

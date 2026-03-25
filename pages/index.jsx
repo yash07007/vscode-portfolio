@@ -14,7 +14,7 @@ export default function HomePage({ bio }) {
                 <div className={styles.foreground}>
                     <div className={styles.content}>
                         <h1 className={styles.name}>{bio.name}</h1>
-                        <h6 className={styles.bio}>Software Developer</h6>
+                        <h6 className={styles.bio}>Software Engineer — Wireless Protocol</h6>
                         <a
                             href="/Yash_Solanki_Resume_USC_2025_04.pdf"
                             alt="Yash_Solanki_Resume_USC_2025_04.pdf"

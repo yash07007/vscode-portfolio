@@ -11,7 +11,7 @@ const ContactCode = ({contactItems}) => {
                     <span className={styles.property}>&nbsp;&nbsp;&nbsp;{item.social}</span>:{" "}
                     <span className={styles.property}>url</span>
                     (
-                    <a href={item.href} target="_blank" rel="noopener">
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
                         "{item.link}"
                     </a>
                     );
@@ -22,7 +22,7 @@ const ContactCode = ({contactItems}) => {
                     <span className={styles.property}>&nbsp;&nbsp;&nbsp;{item.social}</span>:{" "}
                     <span className={styles.property}>url</span>
                     (
-                    <a href={item.href} target="_blank" rel="noopener">
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
                         "{item.link}"
                     </a>
                     );

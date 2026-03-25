@@ -13,36 +13,21 @@ const ContactPage = ({ contactItems }) => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        console.log(process.env.NEXT_PUBLIC_API_URL);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
-            method: "POST",
-            body: JSON.stringify({ name, email, subject, message }),
+        const mailtoLink = `mailto:yashsolanki777@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+        window.open(mailtoLink);
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        toast.success("Opening your email client!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
         });
-        if (res.ok) {
-            toast.success("Your response has been received!", {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-            setName("");
-            setEmail("");
-            setSubject("");
-            setMessage("");
-        } else {
-            toast.error("There was an error. Please try again in a while.", {
-                position: "top-right",
-                autoClose: false,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
     };
 
     return (
